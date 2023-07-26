@@ -7,30 +7,31 @@ A Discord bot created using Discord.py, Python and OpenCV. The bot can manipulat
 
 
 - .image toonify grey resize=50    
-![256351541-35f6d8f1-89d2-438b-9dec-a84598f31aa8](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/9f63c580-c686-4d6f-a1c1-787652402ac7)
+![256351541-35f6d8f1-89d2-438b-9dec-a84598f31aa8](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/2cedcda5-e531-4e10-a255-10d3f24e97fc)
+
 
 
 ### Image Filters
 - Blur   
-![img0](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/6237d4e3-34c2-442a-aeda-744383fbd0a9)
+![blur](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/922eacd0-f4d2-4488-a098-78052cfb8f49)
 
 - Greyscale   
-![img1](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/d1c77cd1-7f55-4e2e-9dbd-84ff6c0be548)
+![grey](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/58f72ec4-0eea-45bc-8896-677d80904042)
 
 - Toonify   
-![img23](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/9595dc08-9b69-41c6-95a1-e72d8fb2186b)
+![toonify](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/33b1c09e-d445-4a89-8c49-c19fe430b622)
 
 - Oil Painting   
-![img3](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/59a97027-0ee9-4377-8343-69c9b8c57875)
+![oil painting](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/5fd1e0c5-60af-4208-b3e6-2f8cf00cc446)
 
 - Invert   
-![img4](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/92ed9e6a-36e3-4d15-8fd2-611edcedce74)
+![invert](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/9f6daf8d-aabb-4a41-b73a-e269b119830f)
 
 - Noise   
-![img5](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/7059c31b-0f3d-47d6-80d2-68ac2c1574bd)
+![noise](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/86b82c4e-7f4b-4350-9b11-5a5742c2cb9c)
 
 - Memeify   
-![img6](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/310cf646-1569-4f45-80a5-b945350efde9)
+![memeify](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/69f023a0-8eab-4ac9-8569-42f0d071171a)
 
 - Pixelate   
-![img7](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/3b7402a0-6755-4ca5-8be9-3ff61d87d34d)
+![pixelate](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/45452fed-e893-4b7d-a3ac-e4acf16b5bc3)
