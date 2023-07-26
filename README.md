@@ -3,7 +3,8 @@ A Discord bot created using Discord.py, Python and OpenCV. The bot can manipulat
 
 ### Bot Commands
 - .commands   
-![256350949-85699daf-981a-41a2-9432-6c58c5f66ed9 (1)](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/9f67dc5c-2589-438d-bd8a-59f95957aa56)
+![256350949-85699daf-981a-41a2-9432-6c58c5f66ed9 (1)](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/6ff5ef41-1661-4c5a-9224-48794e49cc7a)
+
 
 - .image toonify grey resize=50    
 ![256351541-35f6d8f1-89d2-438b-9dec-a84598f31aa8](https://github.com/Amber-Abuah/Discord-Bot-Image-Manipulator/assets/107321078/9f63c580-c686-4d6f-a1c1-787652402ac7)
