@@ -26,10 +26,11 @@ class ImageManipulator:
         return cv2.add(img, noise)
     
     def memeify(self, img, text):
+        text = text.replace("_", " ")
         meme = img.copy()
         r = cv2.rectangle(meme, (0, 0), (img.shape[1], 100), (255,255,255), -1)
         font = cv2.FONT_HERSHEY_SIMPLEX
-        org = (int(img.shape[0]/4), 60)
+        org = (int(img.shape[1]/2) - len(text) * 12, 60)
         fontScale = 1
         color = (0, 0, 0)
         thickness = 2
@@ -40,17 +41,52 @@ class ImageManipulator:
         small = cv2.resize(img, pixel_size, interpolation=cv2.INTER_LINEAR)
         return cv2.resize(small, (img.shape[1], img.shape[0]),  interpolation=cv2.INTER_NEAREST)
     
-    def resize_percentage(self, img, percentage):
-        height = img.shape[1] * percentage / 100
-        width = img.shape[0] * percentage / 100
-        return cv2.resize(img, (int(height), int(width)), interpolation = cv2.INTER_LINEAR)
-    
-    def resize(self, img, x_dimension, y_dimension):
-        return cv2.resize(img, x_dimension, y_dimension, interpolation = cv2.INTER_LINEAR)
-        
-        
+    def resize(self, img, dimensions):
+        print(dimensions)
+        if("x" in  dimensions):
+            dimensions_split = dimensions.split("x")
+            return cv2.resize(img, (int(dimensions_split[0]), int(dimensions_split[1])), interpolation = cv2.INTER_LINEAR)
+        else:
+            percent = int(dimensions) / 100
+            height = img.shape[1] * percent
+            width = img.shape[0] * percent
+            return cv2.resize(img, (int(height), int(width)), interpolation = cv2.INTER_LINEAR)
 
-imgmod = ImageManipulator()
-img = cv2.imread('img.jpg')
-cv2.imshow("Image", imgmod.resize_percentage(img, 110))
-cv2.waitKey()
+
+    async def process_image(self, folder_name, *args):
+        img = cv2.imread(folder_name + "/img.png")
+        filter_stack = []
+
+        print(args)
+        for arg in args:
+            print(arg)
+            if arg == "grey":
+                filter_stack.append("Grey")
+                img = self.greyscale(img)
+            elif arg == "blur":
+                filter_stack.append("Blur")
+                img = self.blur(img)
+            elif arg == "toonify":
+                filter_stack.append("Toonify")
+                img = self.toonify(img)
+            elif arg == "oilpainting":
+                filter_stack.append("Oil painting")
+                img = self.oil_painting(img)
+            elif arg == "invert":
+                filter_stack.append("Invert")
+                img = self.invert(img)
+            elif arg == "noise":
+                filter_stack.append("Noise")
+                img = self.noise(img)
+            elif arg.startswith("memeify="):
+                filter_stack.append("Memeify")
+                img = self.memeify(img, arg.replace("memeify=",""))
+            elif arg == "pixelate":
+                filter_stack.append("Pixelate")
+                img = self.pixelate(img)
+            elif arg.startswith("resize="):
+                filter_stack.append("Resize")
+                img = self.resize(img, arg.replace("resize=", ""))
+                    
+        cv2.imwrite(folder_name + "/img2.png", img)
+        return filter_stack
