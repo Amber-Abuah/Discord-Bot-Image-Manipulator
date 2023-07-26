@@ -1,5 +1,5 @@
 # Discord Bot Image Manipulator
-A Discord bot created using Discord.py and Python. The bot can manipulate any image provided to it using the .image command, followed by parameters such as blur, grey, resize=50 (to rescale to 50% of the original image size) etc. [All current filters can be seen here.](#image-filters) Filters can be stacked on top of each other e.g _.image toonify grey_, will firstly toonify the image, then greyscale it.
+A Discord bot created using Discord.py, Python and OpenCV. The bot can manipulate any image provided to it using the .image command, followed by parameters such as blur, grey, resize=50 (to rescale to 50% of the original image size) etc. [All current filters can be seen here.](#image-filters) Filters can be stacked on top of each other e.g _.image toonify grey_, will firstly toonify the image, then greyscale it.
 
 ### Bot Commands
 - .commands   
