@@ -26,6 +26,7 @@ async def image(ctx, *args):
     elif(len(args) == 0):
         return await ctx.send('No parameters specified!')
 
+    # Creates folder to store image inside
     folder_name = str(ctx.message.author.id)
     if os.path.exists(folder_name):
         shutil.rmtree(folder_name)
@@ -34,8 +35,13 @@ async def image(ctx, *args):
 
     await ctx.message.attachments[0].save(folder_name + "/img.png")
     
+    # Image is processed using ImageManipulator
     filter_stack = await imgM.process_image(folder_name, *args)
+
+    # Sends modified image back to discord
     await send_edited_image(ctx, filter_stack, folder_name)
+
+    # Deletes the original message request
     await ctx.message.delete()
 
 
